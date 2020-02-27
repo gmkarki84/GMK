@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <title>temperature converter</title>
@@ -24,3 +25,31 @@
       </script>
     </body>
   </html>
+=======
+<!DOCTYPE html>
+<html>
+  <title>temperature converter</title>
+<body>
+<p>input temperature:</p>
+
+<p><input id="c" onkeyup="convert('C')"> degrees Celsius</p>
+
+<p><input id="f" onkeyup="convert('F')"> degrees Fahrenheit</p> 
+
+
+
+<script>
+        function convert(degree) {
+  var x;
+  if (degree == "C") {
+    x = document.getElementById("c").value * 9 / 5 + 32;
+    document.getElementById("f").value =(x);
+  } else {
+    x = (document.getElementById("f").value -32) * 5 / 9;
+    document.getElementById("c").value =(x);
+  }
+}
+      </script>
+    </body>
+  </html>
+>>>>>>> 6b3d7147c2ad5b3dc6e03ad66f94e765db6a439e
